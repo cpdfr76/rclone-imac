@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Presentazione della configurazione personale Rclone iMac per accedere a Google Drive dal gestore file di Xubuntu.">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="rclone-imac-site-id" content="cpdfr76-rclone-imac-info-v1">
+  <title>Rclone iMac — Google Drive su Xubuntu</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#contenuto">Vai al contenuto</a>
+<header class="site-header"><div class="wrap header-inner">
+  <a class="brand" href="./">Rclone iMac</a>
+  <nav aria-label="Navigazione principale">
+    <a href="./" aria-current="page">Presentazione</a>
+    <a href="privacy.html">Privacy</a>
+  </nav>
+</div></header>
+<main id="contenuto" class="wrap">
+
+<p class="eyebrow">Configurazione personale · Google Drive su Xubuntu</p>
+<h1>Rclone iMac</h1>
+<p class="lead">Accedere al proprio Google Drive come a una cartella del computer,
+con il programma open source Rclone.</p>
+<div class="callout"><h2>Un collegamento locale, non un servizio online</h2>
+<p>Rclone iMac è il nome della configurazione OAuth personale usata dal titolare su un iMac
+con Xubuntu. Questo sito la descrive: non contiene un accesso a Google,
+non riceve credenziali e non ospita i documenti di Drive.</p></div>
+<div class="grid">
+<section class="card"><h2>A cosa serve</h2>
+<p>Visualizzare cartelle e file, aprire e scaricare documenti, caricare nuovi file,
+rinominare, spostare ed eliminare gli elementi che l’account è autorizzato a gestire.</p>
+<p>Le operazioni nella cartella collegata possono modificare anche i dati sul cloud:
+non è una copia di sicurezza indipendente.</p></section>
+<section class="card"><h2>Come funziona</h2>
+<p>Il programma viene eseguito sul computer del titolare e comunica con le API di Google.
+L’account viene autorizzato nel browser tramite Google OAuth, non su questo sito.</p>
+<p>Con il montaggio della cartella i contenuti vengono scaricati quando necessari;
+l’eventuale cache locale non equivale a una copia completa offline.</p></section>
+</div>
+<section class="article"><h2>Permesso richiesto</h2>
+<p>La configurazione usa l’ambito <code>https://www.googleapis.com/auth/drive</code>
+per gestire anche i file già presenti, non soltanto quelli creati da Rclone.
+Questo comporta accesso esteso in lettura e scrittura a Drive nei limiti dei diritti dell’account.
+Non sono richiesti accessi a Gmail, calendario o contatti.</p>
+<p>La configurazione è destinata esclusivamente all’uso personale del titolare;
+non offre un servizio di archiviazione ad altri utenti.</p>
+<p><a class="button" href="privacy.html">Leggi l’informativa sulla privacy</a></p></section>
+<section class="article" style="margin-top:36px"><h2>Documentazione</h2>
+<p>Il comportamento tecnico è descritto nella documentazione ufficiale di
+<a href="https://rclone.org/drive/">Rclone per Google Drive</a> e di
+<a href="https://rclone.org/commands/rclone_mount/">Rclone mount</a>.
+L’accesso può essere revocato dalle
+<a href="https://myaccount.google.com/connections">connessioni dell’Account Google</a>.</p>
+<p class="small">Per informazioni sulla configurazione è disponibile l’email di assistenza
+mostrata nella schermata di consenso Google. Le segnalazioni aperte su GitHub sono pubbliche:
+non includere file personali, password, credenziali OAuth o token.</p></section>
+
+</main>
+<footer class="site-footer"><div class="wrap">
+  <p><strong>Rclone iMac</strong> · Configurazione personale gestita dall’account GitHub
+  <a href="https://github.com/cpdfr76">cpdfr76</a>.</p>
+  <p>Non è un prodotto ufficiale di Google né il sito ufficiale del progetto Rclone.</p>
+  <p><a href="privacy.html">Informativa sulla privacy</a> ·
+  <a href="https://github.com/cpdfr76/rclone-imac/issues">Contatti e segnalazioni pubbliche</a></p>
+</div></footer>
+</body>
+</html>
