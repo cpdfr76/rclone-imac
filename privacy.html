@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Informativa su accesso, uso, conservazione e revoca dei dati Google Drive nella configurazione personale Rclone iMac.">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="rclone-imac-site-id" content="cpdfr76-rclone-imac-info-v1">
+  <title>Privacy — Rclone iMac</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#contenuto">Vai al contenuto</a>
+<header class="site-header"><div class="wrap header-inner">
+  <a class="brand" href="./">Rclone iMac</a>
+  <nav aria-label="Navigazione principale">
+    <a href="./">Presentazione</a>
+    <a href="privacy.html" aria-current="page">Privacy</a>
+  </nav>
+</div></header>
+<main id="contenuto" class="wrap">
+
+<div class="article">
+<p class="eyebrow">Trasparenza e controllo dei dati</p>
+<h1>Informativa sulla privacy</h1>
+<p class="meta">Rclone iMac · Versione 1.0 · 28 settembre 2026</p>
+<p class="lead">Questa informativa riguarda la configurazione personale «Rclone iMac»
+e il relativo sito informativo, gestiti dall’account GitHub cpdfr76.</p>
+<div class="callout"><p><strong>Il sito non accede al tuo Drive.</strong>
+Il collegamento ai dati avviene dal computer su cui è installato Rclone.
+Le pagine pubbliche non contengono documenti, token o credenziali del titolare.</p></div>
+<section><h2>1. Scopo e dati utilizzati</h2>
+<p>La sola finalità è consentire al titolare di gestire il proprio Google Drive da Xubuntu.
+A seconda delle operazioni richieste vengono utilizzati contenuti dei file,
+nomi, identificativi, cartelle, dimensioni, date e altri metadati restituiti da Drive,
+oltre ai token OAuth necessari per autenticare le richieste.</p>
+<p>L’ambito richiesto è <code>https://www.googleapis.com/auth/drive</code>:
+consente lettura e scrittura anche dei file già presenti, nei limiti dei permessi dell’account.
+Non viene richiesto l’accesso ai messaggi Gmail, ai contatti o al calendario.</p></section>
+<section><h2>2. Utilizzo e destinatari</h2>
+<p>I dati servono alle operazioni richieste dal titolare, come consultazione,
+trasferimento, modifica, spostamento ed eliminazione dei file. Non sono destinati
+alla pubblicità, alla profilazione commerciale, alla vendita o all’addestramento di modelli di intelligenza artificiale.</p>
+<p>La configurazione comunica con Google dal computer locale; non prevede un server
+intermedio del gestore né l’invio dei documenti al repository o a GitHub Pages.
+Google tratta i dati secondo la propria <a href="https://policies.google.com/privacy">informativa</a>.</p>
+<p>L’uso dei dati ottenuti dalle API Google è limitato alle funzioni descritte e deve rispettare
+la <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>,
+compresi i requisiti di utilizzo limitato («Limited Use»). Non sono previsti trasferimenti a terzi per finalità ulteriori.</p></section>
+<section><h2>3. Conservazione e protezione</h2>
+<p>La password Google viene inserita soltanto presso Google. Rclone conserva la propria
+configurazione e i token sul computer del titolare, che deve proteggerli da accessi non autorizzati.
+I collegamenti alle API Google utilizzano HTTPS.</p>
+<p>I file possono essere conservati localmente quando scaricati o nella cache del montaggio;
+eventuali registri tecnici possono contenere nomi di file e messaggi di errore.
+La durata della cache dipende dalle impostazioni adottate; i file scaricati rimangono
+finché il titolare non li elimina. I token restano nella configurazione locale fino alla sua rimozione,
+anche se possono essere resi inutilizzabili revocando l’autorizzazione.</p></section>
+<section><h2>4. Revoca ed eliminazione</h2>
+<p>Per interrompere l’accesso si può arrestare Rclone e revocare «Rclone iMac» dalle
+<a href="https://myaccount.google.com/connections">connessioni dell’Account Google</a>.
+La configurazione locale e le copie scaricate vanno eventualmente rimosse separatamente,
+dopo aver scollegato la cartella montata e verificato che non vi siano caricamenti pendenti.</p>
+<p>La revoca non cancella i file da Google Drive. Al contrario, eliminare elementi dalla
+cartella montata può eliminarli anche sul cloud: con le impostazioni predefinite di Rclone
+le eliminazioni su Drive utilizzano il cestino. Questo collegamento non sostituisce un backup.</p></section>
+<section><h2>5. Visite a questo sito</h2>
+<p>Le pagine sono statiche e non incorporano moduli di raccolta dati, script di tracciamento,
+strumenti pubblicitari o cookie applicativi. GitHub Pages fornisce l’hosting e può trattare
+dati tecnici delle richieste, tra cui l’indirizzo IP, secondo la
+<a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">propria informativa sulla privacy</a>.
+Questi dati di navigazione sono distinti dai contenuti di Google Drive.</p>
+<p>I collegamenti esterni rimandano a servizi con proprie condizioni e informative.
+Il sito non controlla il loro trattamento dei dati.</p></section>
+<section><h2>6. Contatti e aggiornamenti</h2>
+<p>Il gestore è il titolare dell’account GitHub <a href="https://github.com/cpdfr76">cpdfr76</a>.
+Per assistenza sulla configurazione usare l’indirizzo di supporto visualizzato nella schermata
+di consenso Google di Rclone iMac. Per segnalazioni non riservate sul sito è disponibile la
+<a href="https://github.com/cpdfr76/rclone-imac/issues">sezione Issues del repository</a>, che è pubblica.</p>
+<p>Non pubblicare documenti personali, password, file di configurazione o token.
+Questa informativa va aggiornata prima di introdurre nuove finalità o nuove modalità di trattamento.</p>
+<p class="small">Riferimenti tecnici:
+<a href="https://rclone.org/privacy/#user-data-collection-and-storage">trattamento dei dati in Rclone</a>,
+<a href="https://rclone.org/drive/">backend Google Drive</a> e
+<a href="https://rclone.org/commands/rclone_mount/">cache del montaggio</a>.</p></section>
+</div>
+
+</main>
+<footer class="site-footer"><div class="wrap">
+  <p><strong>Rclone iMac</strong> · Configurazione personale gestita dall’account GitHub
+  <a href="https://github.com/cpdfr76">cpdfr76</a>.</p>
+  <p>Non è un prodotto ufficiale di Google né il sito ufficiale del progetto Rclone.</p>
+  <p><a href="privacy.html">Informativa sulla privacy</a> ·
+  <a href="https://github.com/cpdfr76/rclone-imac/issues">Contatti e segnalazioni pubbliche</a></p>
+</div></footer>
+</body>
+</html>
